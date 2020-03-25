@@ -1,12 +1,11 @@
-const express = require( "express" ),
+const express = require( "express" );
+const express = require( "cors" );
+const routes = require( "./routes" );
 
-    app = express();
+const app = express();
 
-app.get( "/", ( request, response ) => {
-    return response.json( {
-        "evento": "Semana OmniStack 11.0",
-        "aluno": "Guilherme Ferreira"
-    } );
-} );
+app.use( cors() );
+app.use( express.json() );
+app.use( routes );
 
 app.listen( 3333 );
