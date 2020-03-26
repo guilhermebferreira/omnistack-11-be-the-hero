@@ -3,9 +3,17 @@ import React from "react";
 import {Link} from 'react-router-dom'
 import {FiArrowLeft} from 'react-icons/fi';
 import logoImage from  '../../assets/logo.svg'
+
+import api from '../../services/api';
+
 import './styles.css';
 
 export default function Register() {
+
+    function handleRegister() {
+
+    }
+
     return (
         <div className="register-container">
             <dic className="content">
@@ -19,7 +27,7 @@ export default function Register() {
                         Não tenho cadastro
                     </Link>
                 </section>
-                <form >
+                <form onSubmit={handleRegister} >
                     <input type="text" placeholder="Nome da ONG"/>
                     <input type="email" placeholder="E-mail"/>
                     <input type="text" placeholder="WHatssap"/>
