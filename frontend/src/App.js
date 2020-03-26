@@ -1,9 +1,12 @@
-import React from 'react';
-import Header from "./Header";
+import React, { useState } from 'react';
+
+import './global.css';
+
+import Routes from "./routes";
 //JSX Javascript XML
 function App() {
   return (
-      <Header >Semana Omnistack </Header>
+      <Routes/>
   );
 }
 
