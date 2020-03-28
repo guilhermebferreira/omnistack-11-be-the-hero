@@ -1,13 +1,13 @@
 import React from "react";
 
 import './styles.css';
-import {Link} from 'react-router-dom'
+import {Link, useHistory} from 'react-router-dom'
 import {FiArrowLeft} from 'react-icons/fi';
 import logoImage from  '../../assets/logo.svg'
 
 export default function NewIncident() {
     return (  <div className="new-incident-container">
-        <dic className="content">
+        <div className="content">
             <section>
                 <img src={logoImage} alt="Be The Hero"/>
 
@@ -26,7 +26,7 @@ export default function NewIncident() {
                 <button className="button" type="submit" >Cadastrar</button>
 
             </form>
-        </dic>
+        </div>
 
     </div>);
 
